@@ -26,3 +26,18 @@ hugheslab storage space
 
 ```
 
+# <a name="hpc-quick-start"> HPC Quick Start</a>
+
+Instructions for both interactive and batch workflow here:
+
+<https://www.cs.tufts.edu/comp/150BDL/2019f/tufts_hpc_setup.html>
+
+### Useful commands
+
+Request an interactive session on GPU
+
+```
+srun -t 0-02:00 --mem 2000 -p gpu --gres pgpu02 --pty bash
+```
+
+
