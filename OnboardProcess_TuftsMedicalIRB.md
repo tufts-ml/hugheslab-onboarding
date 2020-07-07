@@ -14,7 +14,7 @@ https://about.citiprogram.org/en/homepage/
 * Biomedical Research - Stage 1 - Basic Course 
 * Conflict of Interest - Stage 1 
 
-4) For each completed course, send two PDFs to Mike
+4) For each completed course, send two PDFs to Mike via email/slack
 
 * Completion Reports (transcript of your course work, and include all quiz scores)
 * Completion Certificate ("diplomas" that reflect course completion, but do not include quiz score)
