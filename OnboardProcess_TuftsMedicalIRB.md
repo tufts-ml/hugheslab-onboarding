@@ -22,4 +22,4 @@ https://about.citiprogram.org/en/homepage/
 
 # Conflict of Interest documentation
 
-#Before you are able to add courses, you might be prompt with a questionnaire, tufts_citi_training_questionnaire.pdf is an example of the questionnaire and responses. After submitting this questionnaire with the responses shown in the pdf file, the course 'Biomedical Research, stage1' and 'Conflict of Interest, stage1' will be added to your course list, as shown in the last page of the pdf
+Before you are able to add courses, you might be prompt with a questionnaire, tufts_citi_training_questionnaire.pdf is an example of the questionnaire and responses. After submitting this questionnaire with the responses shown in the pdf file, the course 'Biomedical Research, stage1' and 'Conflict of Interest, stage1' will be added to your course list, as shown in the last page of the pdf
