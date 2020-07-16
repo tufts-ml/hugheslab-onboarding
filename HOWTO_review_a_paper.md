@@ -3,13 +3,13 @@ Good general practice:
 
 First, write the paper summary (what did they do?). 
 
-Next, force yourself to list out 3 strengths as well as 3 weaknesses. Try to look at the *balance* between the two.
+Next, force yourself to list out 3 strengths as well as 3 weaknesses. Try to strike a *balance* between the two.
 
 Next, write out detailed comments on the weaknesses.
 
 Next, write your overall top-level summary. Should this be accepted? Would you recommend this paper to a colleague?
 
-Finally, read over the whole review... are you being fair? Is most of the review addressing the truly important strengths/weaknesses?
+Finally, read over the whole review... are you being fair? is this the kind of review you'd like to receive? Is most of the review addressing the truly important strengths/weaknesses?
 
 
 
