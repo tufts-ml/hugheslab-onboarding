@@ -27,3 +27,6 @@ Basically, a high profile external speaker about something related to computing.
 Schedule will be posted soon on CS dept website:
 
 https://www.cs.tufts.edu/t/colloquia/current/?year=2020&season=fall
+
+Often have super relevant speakers to ML / AI / data science. I will highlight these in slack to make sure you attend.
+
