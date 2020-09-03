@@ -15,9 +15,14 @@ If you are assigned for a day you can't present, please trade with someone.
 
 ## 2. Group Meeting
 
-For fall 2020, we'll meet every Thursday 12-130pm, starting next weekAssigned schedule is here:
+For fall 2020, we'll meet every Thursday 12-130pm, starting next week
+
+Assigned schedule is here:
 https://docs.google.com/spreadsheets/d/1_0Y0HO9j6bPhH3jp-sks3ftw246SMlvtgJjqv0t9alY/edit#gid=900801860
+
 On days where we read papers, everyone should read paper in advance and come in ready to discuss.
+
+If you are assigned to a day you can't present, please *trade* with someone.
 
 ## 3. CS Department Colloquia
 
