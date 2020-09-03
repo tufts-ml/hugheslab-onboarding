@@ -29,7 +29,9 @@ Our "Tufts ML" organization is home to both Mike Hughes' research team and Lipin
 
 * (1) If you don't have one yet, create a github account here: <https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account>
 
-* (2) Send an email to Mike (or slack message) with your github username. He'll add you to the team here: https://github.com/tufts-ml/
+* (2) Add yourself to the lab directory here: <https://docs.google.com/spreadsheets/d/1PVeq1UmwchsMTx9nH7qZPmwcrxaMmquSHDlinAnB-zM/edit?usp=sharing>
+
+* (3) Send a slack message or email to Mike with your github username. He'll add you to the team here: https://github.com/tufts-ml/
 
 
 # <a name="hpc-request"> HPC request</a>
