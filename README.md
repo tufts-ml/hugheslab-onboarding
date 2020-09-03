@@ -14,6 +14,10 @@ Onboarding info for hugheslab (how to get access to all the right documents, gro
 
 Have some useful tips to add? See an error you want to fix? Please make changes! You don't need Mike's permission!
 
+# Handy "checklist" of all the things you need to do when you join HughesLab
+
+https://github.com/tufts-ml/hugheslab-onboarding/issues/1
+
 # <a name="slack-request">Slack request</a>
 
 We do quick informal communication via Slack at <tufts-ml.slack.com>
