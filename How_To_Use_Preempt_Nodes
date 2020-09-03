@@ -1,0 +1,32 @@
+Example command:
+
+srun -p preempt --gres=gpu:t4:2 -n 1 --mem=2g --time=1-0:00:00 --pty bash
+
+
+
+resource information about preempt partition:
+
+There are 80 T4s in the preempt partition.
+Each node has up to 4 T4 gpus.
+On the nodes with T4 gpus:
+Nodename CPU Memory (MB)
+pcomp45 80 95077
+pcomp46 80 95077
+pcomp47 80 95077
+pcomp48 80 95077
+pcomp49 80 95077
+pcomp50 80 95077
+pcomp51 80 95077
+pcomp52 80 95077
+pcomp53 80 95077
+pcomp54 80 95077
+pcomp55 80 95077
+pcomp56 80 95077
+pcomp57 80 95077
+pcomp58 80 95077
+pcomp59 80 95077
+pcomp60 80 95077
+pcomp61 80 95077
+pcomp62 80 95077
+pcomp63 80 95077
+pcomp64 80 95077
