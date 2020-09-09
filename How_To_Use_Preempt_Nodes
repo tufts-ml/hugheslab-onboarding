@@ -6,6 +6,7 @@ srun -p preempt --gres=gpu:t4:2 -n 1 --mem=2g --time=1-0:00:00 --pty bash
 notes:
 1. '--mem' specifies the CPU memort. Each gpu has on board memory (fixed), for T4 it is 16g.
 2. preempt partition has 7days time limit
+3. The 80 t4s are also in another special partition for the owner's group only. So when they are running jobs on those nodes, the nodes in preempt partition become unavailable
 
 
 resource on preempt partition:
