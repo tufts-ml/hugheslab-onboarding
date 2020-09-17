@@ -68,8 +68,10 @@ Instructions for both interactive and batch workflow here:
 
 Request an interactive session on GPU
 
+To request a P100
+
 ```
-srun -t 0-02:00 --mem 2000 -p gpu --gres pgpu02 --pty bash
+srun -t 0-02:00 --mem 2000 -p gpu --gres=gpu:p100 --pty bash
 ```
 
 
