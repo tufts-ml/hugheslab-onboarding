@@ -51,4 +51,13 @@ Instructions for using a batch (offline, non-interactive) workflow are here:
 
 <https://github.com/tufts-ml-courses/comp150-bdl-19f-assignments//blob/master/hpc_example/README.md>
 
+The tutorial above will walk you through autoencoder (AE), just like in [BDL class Homework 4]().
+
+Will use "batch" workflow to explore several settings:
+
+    learning rate (lr) of 0.010 and 0.001
+    number of hidden units of 032, 128, and 512
+
+By launching *many separate* jobs, one for each configuration.
+
 Please be a good citizen when using the grid. Do not request too many resources at once or use more than you really need.
