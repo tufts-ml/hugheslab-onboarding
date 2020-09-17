@@ -60,18 +60,6 @@ hugheslab storage space
 
 # <a name="hpc-quick-start"> HPC Quick Start</a>
 
-Instructions for both interactive and batch workflow here:
-
-<https://www.cs.tufts.edu/comp/150BDL/2019f/tufts_hpc_setup.html>
-
-### Useful commands
-
-Request an interactive session on GPU
-
-To request a P100
-
-```
-srun -t 0-02:00 --mem 2000 -p gpu --gres=gpu:p100 --pty bash
-```
+Instructions for both interactive and batch workflow here: [HOWTO_HPC_GettingStarted.md)](./HOWTO_HPC_GettingStarted.md)
 
 
