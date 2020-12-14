@@ -4,6 +4,43 @@ Jump to:
 * [New A100 GPUs](#a100-gpus)
 
 
+# <a id="options">Key Options</a>
+
+See full list of options here: <https://slurm.schedmd.com/sbatch.html>
+
+```
+--partition ccpgu
+--gres gpu:a100:1           # Request an A100 GPU 
+--ntasks 1                  # Number of tasks your job will launch. Usually should just be 1.
+--nodes 1                   # Number of hardware nodes needed. Not sure this ever needs to be >1 unless you are sure cross-machine overhead is low.
+--cpus-per-task 1           # Number of cpus needed. Usually numpy ops on CPU can do fine with 1 but benefit from 2-4 cores with diminishing returns after 8.
+--gpus-per-task 1           # Number of gpus needed. Usually just need 1. Getting multiple GPUs to work well in parallel is not easy in MCH experience. 
+--mem-per-cpu 15000         # Memory in MB needed by each requested CPU. Usually want 1GB - 32GB, except with big data jobs.
+--mem-per-gpu 5000          # Memory in MB needed by each requested GPU. A100s max out at 32GB.
+--export ALL                # Any environment variable in current workspace is exported to the task. Useful for setting up envs.
+```
+
+# If you have not used SLURM before but have used IBM's LSF or Sun grid engine
+
+See the "rosetta stone" here, super useful for translating commands across different grid systems:
+
+https://slurm.schedmd.com/rosetta.pdf
+
+
+# Convenient SLURM commands
+
+
+Want to know the history of a completed job? Try this:
+
+```
+sacct -j 428 --format=User,JobID,Jobname,partition,state,time,start,elapsed,nnodes,ncpus,nodelist,ReqGRES%20
+```
+
+Note that the "%20" suffix ensures it prints out 20 characters worth of info about the requested gpu resources.
+
+For more, see: 
+https://docs.rc.fas.harvard.edu/kb/convenient-slurm-commands/
+
 # <a id="interactive">Interactive Workflow</a>
 
 IF you want to manually interact with good computer over next few hours via terminal, you want "interactive".
