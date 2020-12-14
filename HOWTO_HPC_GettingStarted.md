@@ -8,11 +8,25 @@ Jump to:
 
 See full list of options here: <https://slurm.schedmd.com/sbatch.html>
 
+Here's some example settings for a CPU-only job
+
 ```
---partition ccpgu
---gres gpu:a100:1           # Request an A100 GPU 
---ntasks 1                  # Number of tasks your job will launch. Usually should just be 1.
+--nodes 1                     # Number of hardware nodes needed. Not sure this ever needs to be >1 unless you are sure cross-machine overhead is low.
+--ntasks 1                    # Number of tasks your job will launch. Usually should just be 1, unless you will be spawning multiple processes within your job.
+--partition batch/interactive # If you want sbatch, use 'batch'. If you want an interactive job, use 'interactive'
+--cpus-per-task 1             # Number of cpus needed. Usually numpy ops on CPU can do fine with 1 but benefit from 2-4 cores with diminishing returns after 8.
+--mem-per-cpu 32000           # Memory in MB needed by each requested CPU. Usually want 1GB - 32GB, except with big data jobs.
+--export ALL                  # Any environment variable in current workspace is exported to the task. Useful for setting up envs.
+```
+
+
+Here's some example settings for the new A100 gpus 
+
+```
 --nodes 1                   # Number of hardware nodes needed. Not sure this ever needs to be >1 unless you are sure cross-machine overhead is low.
+--ntasks 1                  # Number of tasks your job will launch. Usually should just be 1, unless you will be spawning multiple processes within your job.
+--partition ccpgu           # 
+--gres gpu:a100:1           # Request an A100 GPU 
 --cpus-per-task 1           # Number of cpus needed. Usually numpy ops on CPU can do fine with 1 but benefit from 2-4 cores with diminishing returns after 8.
 --gpus-per-task 1           # Number of gpus needed. Usually just need 1. Getting multiple GPUs to work well in parallel is not easy in MCH experience. 
 --mem-per-cpu 15000         # Memory in MB needed by each requested CPU. Usually want 1GB - 32GB, except with big data jobs.
