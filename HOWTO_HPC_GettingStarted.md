@@ -1,7 +1,7 @@
 Jump to:
 * [Interactive](#interactive)
 * [Batch](#batch)
-* [New A100 GPUs)(#gpu)
+* [New A100 GPUs](#a100-gpus)
 
 
 # <a id="interactive">Interactive Workflow</a>
@@ -63,7 +63,7 @@ By launching *many separate* jobs, one for each configuration.
 
 Please be a good citizen when using the grid. Do not request too many resources at once or use more than you really need.
 
-# Using the new A100 GPUs
+# <a name="a100-gpus"> Using the new A100 GPUs </a>
 
 There are 5 different "nodes" (e.g. specific hardware boxes), each with 8 A100s. So there are 40 GPUs in total! (which we share across the university).
 
