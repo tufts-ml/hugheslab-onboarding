@@ -74,7 +74,11 @@ Many services on the new architecture (login, slurm controller, web gateways) ar
 #### Login
 
 To connect up, ssh to login.pax.tufts.edu which round robins between two actual login nodes login-prod-01.pax.tufts.edu and login-prod-02.pax.tufts.edu  
+
+```
 ssh your_username@login.pax.tufts.edu
+```
+
 If you are on non-Tufts network, please make sure have Tufts VPN connected first.
 
 #### Jobs
