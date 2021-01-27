@@ -27,8 +27,13 @@ Worth remembering the "rules" and "expectations"
 
 > Do COMP 297/298. This says you are working on phd-level research that is ongoing and gives you the right amount of credit to be full-time. (See above, you'll get a grade of 'Y' in these courses until you finish up your phd).
 
-## For 1st year students admitted to the PhD program without an MS in a field close to CS
+## For 1st year students admitted to the PhD program who want a lighter load and may not need the MS degree
 
 > Register for COMP 406-RA. If a student is an RA, then doing COMP 406-RA means they are “recorded” as doing 20 hrs/week of research and thus at full-time status if they have 6 SHUs of other coursework. It is fine in the first semester(s) to take just 2 standard courses for full-load plus this course to achieve full-time status.
+
+## For 1st year students admitted to the PhD program who want the MS in CS after their 2nd year.
+
+> Think about taking 3 courses per semester in 1st year. This will make research a bit slower, but will get you to the 10 courses needed for MS in CS here at Tufts.
+> Alternatively, you can do 2 courses per semester in 1st year, 1 in summer, and then several more courses in 2nd year.
 
  
