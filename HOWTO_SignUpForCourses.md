@@ -20,8 +20,9 @@ Worth remembering the "rules" and "expectations"
 
 ## For students preparing for Quals in the upcoming semester or who just need a credit to "count" toward the MS
 
-> If you want "course credit" for preparing for quals (helps count toward an MS degree at Tufts): We can do a COMP 193-IND independent study
-	But if the student already has an MS from another institution, you don't need this course as a way of counting towards a magic 10 courses for the MS + 2 courses post-MS.
+> If you want "course credit" for preparing for quals (helps count toward an MS degree at Tufts): We can do a COMP 193-IND independent study. This can be done ONCE during your time at Tufts to count towards the required 10 courses for the MS + 2 courses post-MS.
+
+> But if the student already has an MS from another institution, you don't need this course.  
 
 ## For 2nd year or later phd students who already have an MS from another institution (and don't want an MS CS from Tufts along way to PhD)
 
