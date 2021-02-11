@@ -1,3 +1,5 @@
+These are quick instructions prepared by @michaelchughes on 2021-02-11 for students to access an environment called "fixmatch-a100" designed to load and run code from an old tensorflow version (1.14).
+
 # STEP 0: Log into HPC and request a gpu machine
 
 Request a good gpu machine:
