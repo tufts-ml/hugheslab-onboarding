@@ -2,7 +2,7 @@ Just as a reference, here's my recommended "template" for a workshop submission 
 
 https://www.overleaf.com/read/yfgppzwqtcxs
 
-I like having overleaf as a way to look quickly at the "latest" version, but I mostly use overleaf's Git integration features so that I can edit locally on my laptopThus, I prefer the "many small text files" approach.
+I like having overleaf as a way to look quickly at the "latest" version, but I mostly use overleaf's Git integration features so that I can edit locally on my laptop. Thus, I prefer the "many small text files" approach.
 
 * main.tex is the primary file you can build by calling "pdflatex", as in the associated Makefile
 * Inside main, after the package importing and title and so one, we use \input{abc.tex} to draw content from a specific .tex file (e.g. the text of the abstract or the text of the intro, etc)
