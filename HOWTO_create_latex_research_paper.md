@@ -16,7 +16,14 @@ I like having overleaf as a way to look quickly at the "latest" version, but I m
 \input{results_short.tex}
 ```
 
-I also recommend that each figure and table has text source that is standalone .tex file.... this makes it super easy to move figures around in the document (we just change in main where we import the figure)
+I also recommend that each figure and table has text source that is standalone .tex file.... 
+
+Reasons for standalone tex files for each item in the paper:
+* chance of conflict goes down a lot. if you are editing a.txt and I am editing b.txt, git will merge no problem without us even thinking about avoiding the other's turf
+* git diffs and manipulation with almost any other program is so much easier to understand.... you can look at line 33 not line 1033
+* reorganizing the paper is so much easier. You can just comment out or move one \input{} statement in the main document, and a whole section gets rearranged. this is super easy to do while others are *editing other sections or even the section you are moving*
+
+## Figures
 
 For a figure with many subplots, I find the easiest hting to do is create a separate PDF for each subplot, and use Latex to craft the perfect composition of these subplots into an overall figure, like this example:
 
