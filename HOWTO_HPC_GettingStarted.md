@@ -1,59 +1,61 @@
 Jump to:
-* [Interactive](#interactive)
+* [Interactive job overview](#interactive)
+* [Interactive job with HughesLab RTX6000 GPUs](#hugheslab-gpus)
+* [Interactive job with NSF CC*-funded A100 GPUs](#a100-gpus)
 * [Batch](#batch)
-* [New A100 GPUs](#a100-gpus)
 
+# Overview
 
-# <a id="options">Key Options</a>
+There are two ways to use the cluster:
 
-See full list of options here: <https://slurm.schedmd.com/sbatch.html>
+* Request an *interactive* job, where you want a live terminal where you can *interact* with cluster hardware
+* Request a *batch* job, where you have a job that runs behind the scenes (without you needing to actively monitor it), saving results to disk and exiting on its own (or after timeout)
+
+Both ways require you to use the SLURM job scheduling software. 
+
+If you have never used SLURM before, see the full documentation here:
+
+* Request an interactive job with `srun`: <https://slurm.schedmd.com/srun.html>
+* Request a batch job with `sbatch`: <https://slurm.schedmd.com/sbatch.html>
+
+If you HAVE used another cluster before (like LSF or SunGridEngine), see the "rosetta stone" here, super useful for translating commands across different grid systems:
+https://slurm.schedmd.com/rosetta.pdf
+
+# Requesting resources and settings
+
+Partitions: 
+
+* batch : the default machines for running CPU-only batch jobs at Tufts
+* interactive : the default machines for running CPU-only interactive jobs at Tufts
+* ccgpu : for A100 GPUs
+* hugheslab : for members of hugheslab to use our CPUs and GPUs
 
 Here's some example settings for a CPU-only job
 
 ```
 --nodes 1                     # Number of hardware nodes needed. Not sure this ever needs to be >1 unless you are sure cross-machine overhead is low.
 --ntasks 1                    # Number of tasks your job will launch. Usually should just be 1, unless you will be spawning multiple processes within your job.
---partition batch/interactive # If you want sbatch, use 'batch'. If you want an interactive job, use 'interactive'
 --cpus-per-task 1             # Number of cpus needed. Usually numpy ops on CPU can do fine with 1 but benefit from 2-4 cores with diminishing returns after 8.
 --mem-per-cpu 32000           # Memory in MB needed by each requested CPU. Usually want 1GB - 32GB, except with big data jobs.
 --export ALL                  # Any environment variable in current workspace is exported to the task. Useful for setting up envs.
 ```
 
-
-Here's some example settings for the new A100 gpus 
+Here's some example settings for a job that uses GPUs (and CPU)
 
 ```
+--partition ccpgu           # Make sure you request a partition where your intended GPU lives
+--gres gpu:a100:1           # Request an A100 GPU specifically (you should ALWAYS request the specific model of GPU)
+--gpus-per-task 1           # Number of gpus needed. Usually just need 1. Getting multiple GPUs to work well in parallel is not easy in MCH's experience. 
+--mem-per-gpu 5000          # Memory in MB needed by each requested GPU. A100s max out at 32GB. RTXs max out at 20GB.
+
 --nodes 1                   # Number of hardware nodes needed. Not sure this ever needs to be >1 unless you are sure cross-machine overhead is low.
 --ntasks 1                  # Number of tasks your job will launch. Usually should just be 1, unless you will be spawning multiple processes within your job.
---partition ccpgu           # 
---gres gpu:a100:1           # Request an A100 GPU 
 --cpus-per-task 1           # Number of cpus needed. Usually numpy ops on CPU can do fine with 1 but benefit from 2-4 cores with diminishing returns after 8.
---gpus-per-task 1           # Number of gpus needed. Usually just need 1. Getting multiple GPUs to work well in parallel is not easy in MCH experience. 
 --mem-per-cpu 15000         # Memory in MB needed by each requested CPU. Usually want 1GB - 32GB, except with big data jobs.
---mem-per-gpu 5000          # Memory in MB needed by each requested GPU. A100s max out at 32GB.
 --export ALL                # Any environment variable in current workspace is exported to the task. Useful for setting up envs.
 ```
 
-# If you have not used SLURM before but have used IBM's LSF or Sun grid engine
 
-See the "rosetta stone" here, super useful for translating commands across different grid systems:
-
-https://slurm.schedmd.com/rosetta.pdf
-
-
-# Convenient SLURM commands
-
-
-Want to know the history of a completed job? Try this:
-
-```
-sacct -j 428 --format=User,JobID,Jobname,partition,state,time,start,elapsed,nnodes,ncpus,nodelist,ReqGRES%20
-```
-
-Note that the "%20" suffix ensures it prints out 20 characters worth of info about the requested gpu resources.
-
-For more, see: 
-https://docs.rc.fas.harvard.edu/kb/convenient-slurm-commands/
 
 # <a id="interactive">Interactive Workflow</a>
 
@@ -142,3 +144,18 @@ All hugheslab research students are in the linux group ccgpu and will be able to
 ```
 srun -p ccgpu --gres=gpu:a100:3 --pty bash
 ```
+
+
+# Debugging active or failed jobs with SLURM
+
+
+Want to know the history of a completed job? Try this:
+
+```
+sacct -j 428 --format=User,JobID,Jobname,partition,state,time,start,elapsed,nnodes,ncpus,nodelist,ReqGRES%20
+```
+
+Note that the "%20" suffix ensures it prints out 20 characters worth of info about the requested gpu resources.
+
+For more, see: 
+https://docs.rc.fas.harvard.edu/kb/convenient-slurm-commands/
