@@ -1,10 +1,22 @@
 Jump to:
-* [Interactive job overview](#interactive)
+* [Overview of SLURM](#overview)
 * [Interactive job with HughesLab RTX6000 GPUs](#hugheslab-gpus)
 * [Interactive job with NSF CC*-funded A100 GPUs](#a100-gpus)
 * [Batch](#batch)
+* [Debugging](#debugging)
 
-# Overview
+# Login via SSH
+
+To connect up, ssh to login.pax.tufts.edu which round robins between two actual login nodes login-prod-01.pax.tufts.edu and login-prod-02.pax.tufts.edu  
+
+```
+ssh your_username@login.pax.tufts.edu
+```
+
+If you are on non-Tufts network, please make sure have Tufts VPN connected first.
+
+
+# <a id="overview">Overview</a>
 
 There are two ways to use the cluster:
 
@@ -56,6 +68,48 @@ Here's some example settings for a job that uses GPUs (and CPU)
 ```
 
 
+# Requesting an interactive session on GPU
+
+### <a name="rtx_6000-gpus"> Requesting the new HughesLab RTX-6000 GPUs </a>
+
+There are 4 (soon to be 8) GPUs purchased for priority access among hugheslab group members.
+Feel free to use all of them if not busy, but if others want access please be polite and share!
+
+```
+srun -t 0-02:00 --mem 2000 -p hugheslab --gres=gpu:rtx_6000:1 --pty bash
+```
+
+### <a name="a100-gpus"> Requesting the new A100 GPUs </a>
+
+There are 40 total A100s available, across 5 different "nodes" (e.g. specific hardware boxes), each with 8 A100s. We share these 40 GPUs across the university. So I would strongly recommend not monopolizing all 40, even if nobody seems to be using them all. Try to take maybe 5-10 at a time at most, unless traffic is really light and you have a big deadline.
+
+```
+srun -t 0-02:00 --mem 2000 -p ccgpu --gres=gpu:a100:1 --pty bash
+```
+
+### To request a V100
+
+Only a few available (as of 2020). Usually on a preempt basis, because other users might have priority access.
+
+```
+srun -t 0-02:00 --mem 2000 -p preempt --gres=gpu:v100:1 --pty bash
+```
+
+
+### To request a P100
+
+```
+srun -t 0-02:00 --mem 2000 -p preempt --gres=gpu:p100:1 --pty bash
+```
+
+### To request a T4 on the *preempt* partition
+
+*Warning*: a preempt job can be canceled at anytime if the owner of that node requests access to the resource.
+
+```
+srun -t 0-02:00 --mem 2000 -p preempt --gres gpu:t4:1 --pty bash
+```
+
 
 # <a id="interactive">Interactive Workflow</a>
 
@@ -64,37 +118,6 @@ IF you want to manually interact with good computer over next few hours via term
 Instructions for interactive workflow:
 
 <https://www.cs.tufts.edu/comp/150BDL/2019f/tufts_hpc_setup.html>
-
-## Requesting an interactive session on GPU
-
-### To request a V100
-
-Some of the best GPUs around. Only a few available (as of 2020). 
-
-```
-srun -t 0-02:00 --mem 2000 -p gpu --gres=gpu:v100 --pty bash
-```
-
-
-### To request a P100
-
-```
-srun -t 0-02:00 --mem 2000 -p gpu --gres=gpu:p100 --pty bash
-```
-
-### To request a K20
-
-```
-srun -t 0-02:00 --mem 2000 -p gpu --gres=gpu:k20 --pty bash
-```
-
-### To request a T4 on the *preempt* partition
-
-*Warning*: a preempt job can be canceled at anytime if the owner of that node requests access to the resource.
-
-```
-srun -t 0-04:00 --mem 2000 -p preempt --gres gpu:t4:1 --pty bash
-```
 
 
 # <a id="batch">Batch Workflow</a>
@@ -116,23 +139,6 @@ By launching *many separate* jobs, one for each configuration.
 
 Please be a good citizen when using the grid. Do not request too many resources at once or use more than you really need.
 
-# <a name="a100-gpus"> Using the new A100 GPUs </a>
-
-There are 5 different "nodes" (e.g. specific hardware boxes), each with 8 A100s. So there are 40 GPUs in total! (which we share across the university).
-
-Instructions for access below (note that we are moving to a new virtualized workflow with a different SSH login node address)
-
-Many services on the new architecture (login, slurm controller, web gateways) are virtualized which will bring a number of useful features. Stay tuned as plans move forward on that project.The new architecture mounts the SAME file systems, modules, etc.
-
-#### Login
-
-To connect up, ssh to login.pax.tufts.edu which round robins between two actual login nodes login-prod-01.pax.tufts.edu and login-prod-02.pax.tufts.edu  
-
-```
-ssh your_username@login.pax.tufts.edu
-```
-
-If you are on non-Tufts network, please make sure have Tufts VPN connected first.
 
 #### Jobs
 
@@ -146,7 +152,7 @@ srun -p ccgpu --gres=gpu:a100:3 --pty bash
 ```
 
 
-# Debugging active or failed jobs with SLURM
+# <a id="debugging"> Debugging active or failed jobs with SLURM</a>
 
 
 Want to know the history of a completed job? Try this:
