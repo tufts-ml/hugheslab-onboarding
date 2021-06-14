@@ -18,6 +18,9 @@ Always check slack to make sure no one else is editing your sections before you 
 
 * Git clone the overleaf into a folder on your machine 
 * Build/edit the document locally
+
+MCH recommends TexPad: <https://www.texpad.com/>
+
 * Verify that overleaf is set up as a remote repository
 
 #### To view the current remote url
