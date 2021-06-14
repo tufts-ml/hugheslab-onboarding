@@ -1,3 +1,50 @@
+
+# Getting started with Overleaf and LaTeX
+
+https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_(part_1)
+
+# Workflow
+
+In slack, ping collaborators and let them know you'll edit Section A, B, and C for next X hours.
+
+Always check slack to make sure no one else is editing your sections before you get started
+
+
+## Workflow in your browser
+
+* Edit the source directly
+
+## Workflow on your local machine
+
+* Git clone the overleaf into a folder on your machine 
+* Build/edit the document locally
+* Verify that overleaf is set up as a remote repository
+
+#### To view the current remote url
+
+```
+$ git remote -v
+```
+
+Expected output:
+```
+origin	https://git.overleaf.com/609a6fc02a1f8d0e9cdc81dd (fetch)
+origin	https://git.overleaf.com/609a6fc02a1f8d0e9cdc81dd (push)
+```
+
+#### To edit the remote url
+```
+git remote set-url origin https://git.overleaf.com/5f204125... [Overleaf ID]
+```
+
+#### Once you're satisfied with changes, commit and push to the overleaf repo
+
+```
+git push origin master
+```
+
+# HughesLab template 
+
 Just as a reference, here's my recommended "template" for a workshop submission (obviously, this is for ICLR, and you would change the style file (*.sty) following the directions of your target workshop)
 
 https://www.overleaf.com/read/yfgppzwqtcxs
