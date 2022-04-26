@@ -8,6 +8,10 @@ Here's how I'd cite the Anuran Frog Call dataset from UCI:
 
 <img width="357" alt="image" src="https://user-images.githubusercontent.com/2365444/165352096-6f1046cd-8f7c-4153-a909-5fe2def2e3b1.png">
 
+Here's what the refs look like:
+
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/2365444/165352282-875f61b3-9229-4916-b8b3-c5d539ad37b6.png">
+
 
 And here's the bibtex:
 
