@@ -24,3 +24,4 @@ Before you are able to add courses, you might be prompt with a questionnaire, tu
 
 # Conflict of Interest documentation
 
+* [ ] Complete the COI form (conflict of interest) for the TMED project (ask MCH to forward "Echos_COI Template" file from an email in July 2020)
