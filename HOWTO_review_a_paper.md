@@ -84,13 +84,15 @@ This section could be entirely ignored by the other reviewers/AC in decision mak
 
 First, write the paper summary (#4 above)
 
-Next, force yourself to list out strengths as well as weaknesses (#2 and #3 above)
+Next, summarize the contributions (#5)
 
-Next, write out detailed comments, covering strengths and weaknesses.
+Next, summarize the significance (#6)
 
-Next, write your overall top-level summary. Should this be accepted? Would you recommend this paper to a colleague?
+Next, force yourself to list out strengths as well as weaknesses (#2 and #3 above). Write out detailed comments, covering strengths and weaknesses, for #7-9 above).
 
-Finally, read over the whole review... are you being fair? is this the kind of review you'd like to receive? Is most of the review addressing the truly important strengths/weaknesses?
+Finally, write your overall top-level summary (#1). Should this be accepted? Would you recommend this paper to a colleague?
+
+Before you submit it, read over the whole review again... are you being fair? is this the kind of review you'd like to receive? Is most of the review addressing the truly important strengths/weaknesses?
 
 
 # Useful resources
