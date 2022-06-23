@@ -24,7 +24,7 @@ List out at least 2 strengths of the paper (even if you didn't like it).
 - S1: ....
 - S2: ....
 
-These strengths should be referred to (via the monikers S1, S2, ...) in sections 5-8 below, when you elaborate on the issue more.
+These strengths should be referred to (via the monikers S1, S2, ...) in sections 5-9 below, when you elaborate on the issue more.
 
 ## 3. Summary of Weaknesses
 
@@ -34,7 +34,7 @@ List out at least 2 weaknesses of the paper (even if you liked it)
 - W1: ....
 - W2: ....
 
-These weaknesses should be referred to (via the monikers W1, W2, ...) in sections 5-8 below, when you elaborate on the issue more.
+These weaknesses should be referred to (via the monikers W1, W2, ...) in sections 5-9 below, when you elaborate on the issue more.
 
 ## 4. Summarize the paper 
 
@@ -65,11 +65,16 @@ Have the claims been justified with appropriate evidence (theory or empirical)?
 Are scientific best practices followed?
 Are experiments reproducible by another member of the field using the paper alone?
 
-## 7. Presentation
+## 7. Presentation Quality
 
 Evaluate the organization of the paper as well as the clarity and conciseness of the writing.
 
-## 8. Detailed Feedback for Authors
+## 8. Limitations
+
+Describe the key assumptions or limitations of the approach.
+Are they adequately described in the paper so future readers would know these?
+
+## 9. Detailed Feedback for Authors
 
 Anything else the author would like to know (typos, minor suggestions, etc).
 This section could be entirely ignored by the other reviewers/AC in decision making.
