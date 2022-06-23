@@ -2,7 +2,7 @@
 
 ** Review unto others, as you would like your own papers to be reviewed. **
 
-Reviews can be needlessly harsh. Remember Dennet's 4 rules for successful critical feedback:
+Reviews can be needlessly harsh. Remember [Dennett's 4 rules for successful critical feedback](https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/):
 
 * You should attempt to re-express your target’s position so clearly, vividly, and fairly that your target says, “Thanks, I wish I’d thought of putting it that way.
 * You should list any points of agreement (especially if they are not matters of general or widespread agreement).
