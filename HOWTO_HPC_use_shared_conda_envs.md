@@ -10,6 +10,12 @@ Request a good gpu machine:
 
 `$ export PATH="/cluster/tufts/hugheslab/miniconda3/bin:$PATH"`
 
+Use this one for the specific fixmatch-a100 env in Step 2.
+
+**update for Aug 2021 and later:** if you want to make a fresh conda env, now you should probably instead use
+
+`$ export PATH="/cluster/tufts/hugheslab/miniconda202108/bin:$PATH"`
+
 ### VERIFY step 1
 
 ```
