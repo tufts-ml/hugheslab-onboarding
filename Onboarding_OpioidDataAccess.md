@@ -1,4 +1,4 @@
-To access the opioids dataset, you are required to 
+To access the opioids dataset, you are required to complete training in ethical data access and handling.
 
 # CITI Training
 
