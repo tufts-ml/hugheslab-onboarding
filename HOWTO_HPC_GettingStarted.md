@@ -1,6 +1,6 @@
 Jump to:
 * [Overview of SLURM](#overview)
-* [Interactive job with HughesLab RTX6000 GPUs](#hugheslab-gpus)
+* [Interactive job with HughesLab RTX A6000 GPUs](#hugheslab-gpus)
 * [Interactive job with NSF CC*-funded A100 GPUs](#a100-gpus)
 * [Batch](#batch)
 * [Debugging](#debugging)
@@ -39,8 +39,9 @@ Partitions:
 
 * batch : the default machines for running CPU-only batch jobs at Tufts
 * interactive : the default machines for running CPU-only interactive jobs at Tufts
-* ccgpu : for A100 GPUs
-* hugheslab : for members of hugheslab to use our CPUs and GPUs
+* ccgpu : for 40GB A100 GPUs
+* gpu : for 80GB A100 GPUs
+* hugheslab : for members of hugheslab to use our CPUs and 48GB GPUs
 
 Here's some example settings for a CPU-only job
 
@@ -56,7 +57,7 @@ Here's some example settings for a job that uses GPUs (and CPU)
 
 ```
 --partition ccpgu           # Make sure you request a partition where your intended GPU lives
---gres gpu:a100:1           # Request an A100 GPU specifically (you should ALWAYS request the specific model of GPU)
+--gres gpu:a100:1           # Request an A100 GPU specifically (you should ALWAYS request the specific model of GPU, but currently no way to differentiate between 40GB and 80GB A100 GPUs besides selecting only ccgpu or gpu partition for the job)
 --gpus-per-task 1           # Number of gpus needed. Usually just need 1. Getting multiple GPUs to work well in parallel is not easy in MCH's experience. 
 --mem-per-gpu 5000          # Memory in MB needed by each requested GPU. A100s max out at 32GB. RTXs max out at 20GB.
 
@@ -70,16 +71,17 @@ Here's some example settings for a job that uses GPUs (and CPU)
 
 # Requesting an interactive session on GPU
 
-### <a name="rtx_6000-gpus"> Requesting the new HughesLab RTX-6000 GPUs </a>
+### <a name="hugheslab-gpus"> Requesting the new HughesLab RTX A6000 GPUs </a>
 
-There are 4 (soon to be 8) GPUs purchased for priority access among hugheslab group members.
+There are 8 RTX 6000 and 8 RTX A6000 GPUs purchased for priority access among hugheslab group members.
 Feel free to use all of them if not busy, but if others want access please be polite and share!
 
 ```
 srun -t 0-02:00 --mem 2000 -p hugheslab --gres=gpu:rtx_6000:1 --pty bash
+srun -t 0-02:00 --mem 2000 -p hugheslab --gres=gpu:rtx_a6000:1 --pty bash
 ```
 
-### <a name="a100-gpus"> Requesting the new A100 GPUs </a>
+### <a name="a100-gpus"> Requesting the A100 GPUs </a>
 
 There are 40 total A100s available, across 5 different "nodes" (e.g. specific hardware boxes), each with 8 A100s. We share these 40 GPUs across the university. So I would strongly recommend not monopolizing all 40, even if nobody seems to be using them all. Try to take maybe 5-10 at a time at most, unless traffic is really light and you have a big deadline.
 
