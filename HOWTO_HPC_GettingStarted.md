@@ -71,13 +71,28 @@ Here's some example settings for a job that uses GPUs (and CPU)
 
 # Requesting an interactive session on GPU
 
-### <a name="hugheslab-gpus"> Requesting the new HughesLab RTX A6000 GPUs </a>
+### <a name="hugheslab-gpus"> Requesting the HughesLab GPUs (RTX 6000 or RTX A6000)</a>
 
 There are 8 RTX 6000 and 8 RTX A6000 GPUs purchased for priority access among hugheslab group members.
-Feel free to use all of them if not busy, but if others want access please be polite and share!
+Feel free to use all of them if not busy, but always default to sharing with others in the lab
+
+# Accessing the 8 RTX 6000 GPUs (purchased ~2020)
+
+* 24 GB RAM
+* 16.3 TFLOPS at single precision
+* Spec sheet: <https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/quadro-product-literature/quadro-rtx-6000-us-nvidia-704093-r4-web.pdf>
 
 ```
 srun -t 0-02:00 --mem 2000 -p hugheslab --gres=gpu:rtx_6000:1 --pty bash
+```
+
+# Accessing the 8 RTX A6000 GPUs (purchased ~2023)
+
+* 48 GB RAM
+* 38.7 TFLOPS at single precision
+* Spec sheet: <https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/quadro-product-literature/proviz-print-nvidia-rtx-a6000-datasheet-us-nvidia-1454980-r9-web%20(1).pdf>
+
+```
 srun -t 0-02:00 --mem 2000 -p hugheslab --gres=gpu:rtx_a6000:1 --pty bash
 ```
 
