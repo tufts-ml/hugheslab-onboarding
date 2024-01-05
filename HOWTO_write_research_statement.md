@@ -18,6 +18,14 @@ Who is reading this document? Existing faculty at the institution, who have alre
 * Articulate a clear niche for yourself (not too general, not too specific)
 * Keep it short and simple (have a 2 page version and a 3 page version ready to go).
 
+### Reflect your brand
+
+Want this research statement to have synergy with your other statements and CV, and make clear what skills + interests you have.
+
+See MIT EECS resources on branding: <https://mitcommlab.mit.edu/eecs/commkit/faculty-application/>
+
+Be more narrow than "AI for X" or "computer vision", but not about one project.
+
 ### Resources
 
 * MIT EECS Comm Kit: https://mitcommlab.mit.edu/eecs/commkit/faculty-application-research-statement/
