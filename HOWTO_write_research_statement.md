@@ -26,6 +26,14 @@ See MIT EECS resources on branding: <https://mitcommlab.mit.edu/eecs/commkit/fac
 
 Be more narrow than "AI for X" or "computer vision", but not about one project.
 
+### Write early and Get feedback early!
+
+It's never too early to start draft this document. Ideally it grows out of your research prospectus!
+
+MCH is happy to give feedback on this at any time.
+
+Highly recommend getting at least 1-2 other faculty members to give feedback (one in your area, one outside of it to see how it comes across to outsiders)
+
 ### Resources
 
 * MIT EECS Comm Kit: https://mitcommlab.mit.edu/eecs/commkit/faculty-application-research-statement/
