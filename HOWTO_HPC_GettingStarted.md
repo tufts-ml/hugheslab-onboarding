@@ -4,6 +4,7 @@ Jump to:
 * [Interactive job with NSF CC*-funded A100 GPUs](#a100-gpus)
 * [Batch](#batch)
 * [Debugging](#debugging)
+* [Finding Available Resources](#finding-available-resources)
 
 # Login via SSH
 
@@ -182,3 +183,14 @@ Note that the "%20" suffix ensures it prints out 20 characters worth of info abo
 
 For more, see: 
 https://docs.rc.fas.harvard.edu/kb/convenient-slurm-commands/
+
+# Finding Available Resources
+
+
+The following command uses [sinfo](https://slurm.schedmd.com/sinfo.html) to list the partition, number of CPUs active/idle/other/total, GPUs assigned to node, GPUs currently in use.
+
+```
+sinfo -O "Partition:20,CPUsState:20,Gres:20,GresUsed:30"
+```
+
+To identify a node that should be available to run your job, find a node that has your required number of CPUs idle and your required number of GPUs not in use.
