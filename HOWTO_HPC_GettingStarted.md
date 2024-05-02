@@ -5,6 +5,7 @@ Jump to:
 * [Batch](#batch)
 * [Debugging](#debugging)
 * [Finding Available Resources](#finding-available-resources)
+* [Cancelling All Your Jobs](#cancelling-all-your-jobs)
 
 # Login via SSH
 
@@ -194,3 +195,11 @@ sinfo -O "Partition:20,CPUsState:20,Gres:20,GresUsed:30"
 ```
 
 To identify a node that should be available to run your job, find a node that has your required number of CPUs idle and your required number of GPUs not in use.
+
+# Cancelling All Your Jobs
+
+The following command drops the header from `squeue`, grabs your job IDs, and then cancels those IDs with `scancel`.
+
+```
+squeue -u $USER | tail -n +2 | awk '{print $1}' | xargs scancel
+```
