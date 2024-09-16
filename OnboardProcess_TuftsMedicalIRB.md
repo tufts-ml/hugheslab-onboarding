@@ -30,8 +30,11 @@ After submitting this questionnaire with the responses shown in the pdf file, yo
 
 # Conflict of Interest (COI) documentation
 
-* For the ADDF-funded project on MRI images
+For the ADDF-funded project on MRI images:
+
 * [ ] Complete the COI form here: https://tufts.box.com/s/7ix03q8x815d75lv19hjkn2u48qzzcrx
+* You can answer "no" to the intellectual property question.
   
-* For the TMED project on echo images of the heart
+For the TMED project on echo images of the heart:
+
 * [ ] Complete the COI form from MCH, look for "Echos_COI Template" MS Word file from an email in July 2020
