@@ -28,7 +28,10 @@ After submitting this questionnaire with the responses shown in the pdf file, yo
 * Completion Reports (transcript of your course work, and include all quiz scores)
 * Completion Certificate ("diplomas" that reflect course completion, but do not include quiz score)
 
-# Conflict of Interest documentation
+# Conflict of Interest (COI) documentation
 
-* [ ] Complete the COI form (conflict of interest) for the TMED project
-* * ask MCH to forward "Echos_COI Template" MS Word file from an email in July 2020
+* For the ADDF-funded project on MRI images
+* [ ] Complete the COI form here: https://tufts.box.com/s/7ix03q8x815d75lv19hjkn2u48qzzcrx
+  
+* For the TMED project on echo images of the heart
+* [ ] Complete the COI form from MCH, look for "Echos_COI Template" MS Word file from an email in July 2020
