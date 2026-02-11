@@ -18,6 +18,12 @@ Worth remembering the "rules" and "expectations"
 * 4) You need to complete the 4 required courses (COMP 160, COMP 170, COMP 105, COMP 40) at some point, or have "equivalent" courses from other institutions counted.
     
 * 5) The CS Department Policy, ratified by the SOE Grad Dean is that no grades are given for Comp 297/298 Graduate Research credits until such time as the student has successfully passed the Final Public Dissertation Defense — that is when we know whether the research conducted by the student was “successful”. We used to not record any grade at all, but starting two years ago, the registrar insists that we enter a grade of “Y”.   A “Y” indicates that the work is still in progress, BUT IT WAS EXPECTED TO BE SO.   This is very different from an “Incomplete” which suggests that the student was in someway deficient in focus or execution and somehow didn’t get things done on time.   A “Y” means that by design, there is not yet a grade.
+
+# How many Credits of 297 Should I take?
+
+The handbook seems flawed here. In order to graduate with a PhD, you need 54 research credits. The handbook also says that you should take 9 credits a semester, and *seems to imply* that even though TA/RA (405/406) isn't worth credit, it's 3 credits of load so you should only sign up for 6 credits in addition to a TA/RA. However, if you only ever take 6 credits of research- you will need 9 semesters of full-time research. Every single Hugheslab PhD student (Zhe, Preetish, Cynthia, Kyle, Ethan) has reached the end of their PhD without enough credits because they followed this guideline.
+
+It seems like the intention is instead that you take 9 credits of 297 per semester when doing full-time research. This way, you can graduate after 3 years. We do not yet have verification from the deparatment, but going forward I believe you should register for 297 as if the TA/RA didn't take up any credits. For example, in a semster with no classes, you should register for 9 credits of 297 and also 405/406. In a semester with 3 credits of classes, register for 6 credits of 297 and also a TA/RA.
     
 # Scenarios
 
